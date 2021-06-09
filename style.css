@@ -126,7 +126,7 @@ footer {
     margin-top: 7em;
     display: flex;
     justify-content: center;
-    height: 15em;
+    height: 20em;
     background-color: rgba(244, 156, 140, 0.56);
 }
 
@@ -173,6 +173,7 @@ footer {
 
     section {
         align-items: center;
+        height: 50em;
     }
 
     footer {
@@ -182,9 +183,9 @@ footer {
 }   
 
 
-@media screen and (max-width: 1135px) and (min-width: 848px) {
+@media screen and (max-width: 1177px) and (min-width: 999px) {
     body {
-        font-size: 60%;
+        font-size: 70%;
     }
 
     .search > input {
@@ -204,7 +205,7 @@ footer {
     }
 
     footer {
-        height: 20em;
+        height: 22em;
         margin-top: 2em;
     }
 
@@ -214,16 +215,36 @@ footer {
 
     section {
         align-items: center;
+        height: 50em;
     }
 }
 
-@media screen and (max-width: 847px) and (min-width: 710px) {
+@media screen and (max-width: 1000px) and (min-width: 710px) {
     body {
         font-size: 50%;
     }
 
     footer {
-        height: 18em;
+        height: 30em;
+        margin-top: 0;
+    }
+
+    section {
+        height: 55em;
+        align-items: center;
+    }
+
+    @media screen and (max-height: 1200px) {
+        section {
+            height: 60em;
+            font-size: 100%;
+        }
+
+        footer {
+            height: 30em;
+            font-size: 120%;
+        }
+        
     }
     
 }
@@ -259,12 +280,31 @@ footer {
     }
 
     footer {
-        height: 22em;
+        height: 25em;
     }
 
     .items > img {
         height: 2.5em;
         width: 2.5em;
+    }
+
+    @media screen and (max-height: 1200px) {
+        section {
+            height: 70em;
+        }
+
+        footer {
+            font-size: 130%;
+            height: 30em;
+        }
+
+        .logo2{
+            margin-left: 7em;
+        }
+
+        #contact {
+            margin-right: 7em;
+        }
     }
 
 }
@@ -298,6 +338,7 @@ footer {
         font-size: 125%;
         flex-direction: column;
         display: grid;
+        height: 70em;
     }
 
     .pictures:nth-child(1) {
@@ -320,7 +361,8 @@ footer {
 
     footer {
         display: grid;
-        height: 26em;
+        height: 28em;
+        font-size: 160%;
     }
     
     .logo2 > img {
@@ -348,6 +390,18 @@ footer {
         width: 2.5em;
     }
 
+    @media screen and (max-height: 1200px) {
+        section {
+            height: 80em;
+            font-size: 150%;
+        }
+
+        footer {
+            font-size: 150%;
+            height: 55em;
+        }
+
+    }
 }
 
 @media screen and (max-width: 427px) {
@@ -367,30 +421,48 @@ footer {
     footer {
         height: 30em;
     }
+
+    @media screen and (max-height:792px) {
+        footer {
+            margin-top: 0;
+            font-size: 170%
+        }
+
+        section {
+            align-items: center;
+            height: 80em;
+            font-size: 140%;
+        }
+
+        .logo2 {
+            height: 0;
+        }
+    }
 }
 
 @media screen and (max-height: 1368px) and (min-height: 1024px) and (max-width: 1025px) and (min-width: 768px) {
     section {
-        height: 50em;
-        font-size: 120%;
+        height: 55em;
+        font-size: 90%;
     }
 
     footer {
-        overflow: hidden;
         font-size: 140%;
-        min-height: 25vh;
+        height: 25em;
     }
 
     .logo2 {
-        margin-top: 10em;
+        margin-top: 4em;
+        margin-left: 3em;
     }
 
     #contact {
-        margin-top: 10em;
+        margin-top: 4em;
+        margin-right: 3em;
     }
 
     .phrase {
-        margin-bottom: 5em;
+        margin-bottom: 3em;
     }
 }
 
@@ -410,60 +482,50 @@ footer {
     section {
         margin-top: 4em;
         height: 85em;
-    }
-
-    footer {
-        font-size: 220%;
-    }
-
-}
-
-@media screen and (max-height: 738px) and (max-width: 418px) {
-    section {
-        margin-top: 4em;
-        height: 65em;
-    }
-
-    footer {
-        font-size: 220%;
-
-    }
-}
-
-@media screen and (max-height: 738px) and (max-width: 418px) {
-    section {
-        margin-top: 4em;
-        height: 65em;
-    }
-
-    footer {
-        font-size: 220%;
-
-    }
-}
-
-@media screen and (max-width: 1133px) and (max-height: 750px) and (min-width: 712px) and (min-height: 720px) {
-    footer {
-        height: 22em;
-        margin-top: 4em;
-
-    }
-
-    section {
-        height: 35em;
-    }
-}
-
-@media screen and (max-width: 848px) and (max-height: 750px) and (min-width: 712px) and (min-height: 720px) {
-    footer {
-        height: 22em;
-        margin-top: 4em;
-
-    }
-
-    section {
-        height: 40em;
         align-items: center;
+        flex-direction: column;
+        display: grid;
+        font-size: 150%;
+    }
+
+    footer {
+        font-size: 220%;
+    }
+
+    .pictures:nth-child(1) {
+        padding-bottom: 1.4em;
+    }
+
+    .pictures:nth-child(1) > .smaller-box {
+        padding-right: 0;
+    }
+
+    .pictures:nth-child(2) > .smaller-box {
+        order: -1;
+        padding-left: 0;
+        gap: 4em;
+    }
+
+    .pictures:nth-child(2) > .biggest-box {
+        padding-left: 3.125em;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-height: 738px) and (max-width: 418px) {
+    section {
+        margin-top: 4em;
+        height: 65em;
+        margin-bottom: 5em;
+    }
+
+    footer {
+        font-size: 220%;
+
     }
 }
 
